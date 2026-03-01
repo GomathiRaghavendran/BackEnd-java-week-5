@@ -1,0 +1,29 @@
+/**
+ * Reads a file and prints only lines that contain the word "Java".
+*/
+
+package reading.examples;
+import java.io.*;
+
+public class Example4
+{
+    public static void main(String[] args)
+    {
+        String filePath = "resources" + File.separator + "articles.txt";
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath)))
+        {
+            String line;
+            while ((line = reader.readLine()) != null)
+            {
+                if (line.contains("Java"))
+                {
+                    System.out.println(line);
+                }
+            }
+        }
+        catch (IOException e)
+        {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
+    }
+}
