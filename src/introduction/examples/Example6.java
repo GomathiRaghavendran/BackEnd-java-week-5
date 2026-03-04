@@ -4,7 +4,7 @@
  * 3. Print a message once the copy is complete.
  */
 
-package introduction.examples;
+package src.introduction.examples;
 
 import java.io.File;
 import java.io.FileInputStream;

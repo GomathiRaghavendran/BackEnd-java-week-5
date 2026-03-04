@@ -7,7 +7,7 @@
  * 4. After writing, print "File written successfully!".
  */
 
-package introduction.exercises;
+package src.introduction.exercises;
 
 public class Exercise4
 {

@@ -5,7 +5,7 @@
  * 4. After creation, print the directory’s absolute path.
  */
 
-package introduction.examples;
+package src.introduction.examples;
 
 import java.io.File;
 

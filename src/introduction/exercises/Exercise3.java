@@ -7,12 +7,47 @@
  * 4. Print the total number of files and directories found.
  */
 
-package introduction.exercises;
+package src.introduction.exercises;
 
-public class Exercise3
-{
-    public static void main(String[] args)
-    {
+import java.io.File;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Exercise3 {
+    public static void main(String[] args) {
+        File file = new File("C:\\Users\\eesha\\Back up-Workspace\\BackEnd-java-week-5\\resources");
+        System.out.println(file.isDirectory());
+        File[] listOfFile = file.listFiles();// It returns array of files
+
+        String fileList[]=file.list();//It returns array of String
+        int count = 0;
+//        for (int i = 0; i < file.list().length; i++) {
+//
+//
+//            count++;
+//
+//            System.out.println(listOfFile[i]);
+//
+//        }
+//
+//
+//        System.out.println("Number of files in a specified directory: " + count);
+
+
+        //For each loop
+
+        for (File item : listOfFile){
+            count++;
+            //System.out.println(item);
+           if(item.isDirectory()){
+               System.out.println("Dir: "+item.getName());
+           }else
+               System.out.println("File: "+item.getName());
+
+            }
+        System.out.println("Number of files in a specified directory: " + count);
 
     }
-}
+    }
+

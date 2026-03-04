@@ -4,7 +4,7 @@
  * 3. Use try-with-resources to close automatically.
  */
 
-package introduction.examples;
+package src.introduction.examples;
 
 import java.io.File;
 import java.io.FileReader;

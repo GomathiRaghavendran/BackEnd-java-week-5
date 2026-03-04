@@ -6,7 +6,7 @@
  *  5. Handle IOException properly.
  */
 
-package introduction.exercises;
+package src.introduction.exercises;
 
 public class Exercise6
 {
