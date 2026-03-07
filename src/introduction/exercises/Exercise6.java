@@ -8,10 +8,39 @@
 
 package src.introduction.exercises;
 
-public class Exercise6
-{
-    public static void main(String[] args)
-    {
+import java.io.*;
+import java.util.Scanner;
 
+public class Exercise6 {
+    public static void main(String[] args) throws IOException {
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Enter a String: ");
+            String userInput = sc.nextLine();//To enter the string
+            // Prompt for the file name separately
+            System.out.println("Enter the file name: ");
+            String fileName = sc.nextLine();
+
+            try {
+                FileWriter file = new FileWriter(fileName);
+                file.write(userInput); //User string is written
+                file.flush();                    // Make sure all content is written
+                // After writing, print "File written successfully!".
+                System.out.println("File written successfully! Check the file named: " + fileName);
+            }
+            catch (IOException e) {
+                //  Handle IOException properly.
+                System.err.println("An error occurred while writing the file: " + e.getMessage());
+
+            }
+            sc.close();
+        }
     }
-}
+
+
+
+
+
+
+
