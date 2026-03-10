@@ -1,0 +1,5 @@
+To provide lines that contain errors, I need the specific text you are referring to. The term "error" can refer to many different things, such as:
+Syntax errors in code (missing a comma or quotation mark).
+Sentence structure errors in natural language (run-ons or comma splices).
+Invalid characters in a file due to incorrect encoding.
+Logic errors where code doesn't do what was intended.
