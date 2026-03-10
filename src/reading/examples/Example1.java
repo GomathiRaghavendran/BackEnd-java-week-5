@@ -3,7 +3,7 @@
  * Demonstrates simple use of FileReader.
  */
 
-package reading.examples;
+package src.reading.examples;
 
 import java.io.File;
 import java.io.FileReader;
